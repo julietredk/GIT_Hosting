@@ -13,5 +13,5 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.10' # install the python version needed
-    - run: search_for_tabs.py  ${changed_file}
+    - run: python  search_for_tabs.py  ${changed_file}
 
