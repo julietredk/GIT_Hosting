@@ -11,5 +11,7 @@ jobs:
       uses: jitterbit/get-changed-files@v1
     - name: setup python
       uses: actions/setup-python@v4
-    - run: ./search_for_tabs.py  ${changed_file}
+      with:
+        python-version: '3.10' # install the python version needed
+    - run: search_for_tabs.py  ${changed_file}
 
